@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <head>
+    <title>go-vision-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/bundle.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="valign-wrapper">
+        <h3 class="valign">Google Cloud Vision API</h3>
+      </div>
+      <form action="#">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input id="file" type="file" name="capture" accept="image/*" capture="camera">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+      <div class="col s12" style="margin: 20px;">
+        <img id="image" class="materialboxed responsive-img"/>
+      </div>
+      <button id="analyze" class="btn waves-effect waves-light btn-large" type="submit" name="action">Analyze
+        <i class="material-icons right">send</i>
+      </button>
+      <div class="section" id="result-container">
+        <h4>Result</h4>
+        <div class="progress" id="loading" style="display:none;">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

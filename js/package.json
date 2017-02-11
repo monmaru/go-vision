@@ -1,0 +1,15 @@
+{
+  "name": "go-vision",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.9.0"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
