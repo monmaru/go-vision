@@ -2,7 +2,6 @@ package govision
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"net/http"
 
@@ -84,7 +83,10 @@ func HandleVision(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	fmt.Fprintf(w, "%s", jsonData)
+	if _, err := w.Write(jsonData); err != nil {
+		log.Errorf(c, "Error, w.Write: %v", err)
+		http.Error(w, "Internal Server Error: "+err.Error(), http.StatusInternalServerError)
+	}
 }
 
 func createService(c context.Context) (*vision.Service, error) {
