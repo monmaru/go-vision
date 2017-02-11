@@ -1,0 +1,58 @@
+{
+    "memo": "",
+    "projects": [
+        {
+            "name": "cloud.google.com/go",
+            "branch": "master",
+            "revision": "28994ff9b5baa92fe337dacaee126fcf80fefa3e",
+            "packages": [
+                "compute/metadata"
+            ]
+        },
+        {
+            "name": "github.com/golang/protobuf",
+            "branch": "master",
+            "revision": "8ee79997227bf9b34611aee7946ae64735e6fd93",
+            "packages": [
+                "proto"
+            ]
+        },
+        {
+            "name": "golang.org/x/net",
+            "branch": "master",
+            "revision": "61557ac0112b576429a0df080e1c2cef5dfbb642",
+            "packages": [
+                "context",
+                "context/ctxhttp"
+            ]
+        },
+        {
+            "name": "golang.org/x/oauth2",
+            "branch": "master",
+            "revision": "25b4fb1468cb89700c7c060cb99f30581a61f5e3",
+            "packages": [
+                ".",
+                "google"
+            ]
+        },
+        {
+            "name": "google.golang.org/api",
+            "branch": "master",
+            "revision": "2da5589ad30130b51fa58b5acbceaeb647ebe06e",
+            "packages": [
+                "vision/v1"
+            ]
+        },
+        {
+            "name": "google.golang.org/appengine",
+            "branch": "master",
+            "revision": "5b8c3b819891014a2d12354528f7d046dd53c89e",
+            "packages": [
+                ".",
+                "log",
+                "urlfetch",
+                "user"
+            ]
+        }
+    ]
+}
